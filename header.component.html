@@ -1,0 +1,24 @@
+<ul class="nav navbar-dark jumbotron">
+  <li class="nav-item" routerLinkActive="red" [routerLinkActiveOptions]="{exact: true}" >
+        <a class="nav-link" [routerLink]="'/home'">Home</a>
+  </li>
+  <!-- <li class="nav-item" routerLinkActive="red">
+    <a class="nav-link" [routerLink]="'/commentator'">Commentator</a>
+  </li>
+  <li class="nav-item" routerLinkActive="red">
+    <a class="nav-link" [routerLink]="'/cricketscore'">Cricket Score</a>
+  </li>
+  <li class="nav-item" routerLinkActive="red">
+    <a class="nav-link" [routerLink]="'/firstininning'">First Ininning</a>
+  </li>
+  <li class="nav-item" routerLinkActive="red">
+      <a class="nav-link" [routerLink]="'/secondininning'">Second ininning</a>
+    </li> -->
+     <li class="nav-item" routerLinkActive="red">
+      <a class="nav-link" [routerLink]="'/schedulematch'">Schedule Match</a>
+    </li>
+    <!-- <li class="nav-item" routerLinkActive="red">
+        <a class="nav-link" [routerLink]="['/editmatch', 'id']">Edit Match </a>
+      </li>  -->
+</ul>
+<router-outlet></router-outlet>

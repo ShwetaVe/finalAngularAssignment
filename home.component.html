@@ -1,0 +1,28 @@
+
+ <ul class="list-group">
+  <li *ngFor="let match of cricketService.matches;" class="list-group-item"> 
+<table class="table table-dark">
+  <tr>
+    <th>Match</th>
+    <th>Result</th>
+    <th>Date</th>
+    <!-- <th>Edit</th> -->
+  </tr>
+<tbody>
+  <tr>
+    <td>{{match.team1name}}-{{match.team2name}}</td>
+    <td>
+      {{match.result}}
+    </td>
+    <td>
+     {{match.date| date : 'medium'}}
+    </td>
+    <!-- <td>
+      <button type="button" class="btn btn-primary btn-sm" (click)="editMatch(match.matchid,match)"> Edit
+      </button>
+      </td> -->
+  </tr>
+</tbody>
+</table>
+</li>
+</ul>

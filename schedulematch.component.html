@@ -1,0 +1,18 @@
+<form (ngSubmit)="scheduleBtnClick(addmatchForm)" #addmatchForm="ngForm">
+    <div class="jumbotron">
+      <label class="text-info">Schedule a match:</label>
+      <label>Country</label>
+      <input type="text" class="col pull-right"  placeholder="Add country name" for="btn" ngModel name="countryName">
+        <label>Team1 Name</label>
+        <input type="text" class="col pull-right"  placeholder="Add country name" for="btn" ngModel name="team1Name">
+          <label>Team2 Name</label>
+          <input type="text" class="col pull-right"  placeholder="Add country name" for="btn" ngModel name="team2Name">
+        <div class="form-group">
+            <label >Match Date</label>
+            <input type="date" ngModel name="matchDate" max="3000-12-31" 
+                   min="1000-01-01" class="form-control">
+           </div>
+      <input  class="btn btn-success float-right" id="btnSchedule" type="Submit" value="Schedule Match">
+    </div>
+  </form>
+  

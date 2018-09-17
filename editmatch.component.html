@@ -1,0 +1,18 @@
+<form (ngSubmit)="rescheduleBtnClick(editmatchForm)" #editmatchForm="ngForm">
+    <div class="jumbotron">
+      <label class="text-info">Schedule a match:</label>
+      <label>Country</label>
+      <input type="text" class="col pull-right"  placeholder="Add country name" for="btn" ngModel name="countryName" [value]="matchobj.country">
+        <label>Team1 Name</label>
+        <input type="text" class="col pull-right"  placeholder="Add country name" for="btn" ngModel name="team1Name" [value]="matchobj.team1name">
+          <label>Team2 Name</label>
+          <input type="text" class="col pull-right"  placeholder="Add country name" for="btn" ngModel name="team2Name" [value]="matchobj.team2name">
+        <div class="form-group">
+            <label >Match Date</label>
+            <input type="date" ngModel name="matchDate" max="3000-12-31" 
+                   min="1000-01-01" class="form-control" [value]="matchobj.dateOfmatch">
+           </div>
+      <input  class="btn btn-success float-right" id="btnSchedule" type="Submit" value="ReSchedule Match">
+    </div>
+  </form>
+  
